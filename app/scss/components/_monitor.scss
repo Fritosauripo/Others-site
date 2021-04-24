@@ -1,0 +1,60 @@
+.monitor {
+    position: relative;
+    overflow: hidden;
+
+    &__img {
+        padding: 5px 5px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
+    &__content {    
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-self: center;
+        padding: 10px 10px;
+        background-image: url('../../images/content/monitor.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__wrapper{
+        position: relative;
+        z-index: 2;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 73px;
+    }
+
+    &__folders {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__folder {
+        display: block;
+        text-align: center;
+        transition: background-color 0.2s, border 0.2s ease;
+
+        &:hover{
+            background-color: #4F8FC7AD;
+            border: 2px solid #599bd4ef;
+        }
+    }
+}
+
+.plant{
+    position: absolute;
+    bottom: -29px;
+    left: -39px;
+    z-index: 1;
+}
